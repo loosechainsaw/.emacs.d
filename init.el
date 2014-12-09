@@ -50,6 +50,7 @@
     
     ;; Editing
     highlight-parentheses
+    smartparens
  ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -95,3 +96,6 @@
 
 ;; Add lisp goodness
 (load "lispy.el")
+
+;; Nice editing stuff
+(load "editing.el")
