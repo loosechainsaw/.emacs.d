@@ -21,7 +21,7 @@
 ;; Define packages
 (defvar package-listing
   '(
-
+    
     ;; git integration
     git-gutter-fringe
     magit
@@ -31,23 +31,25 @@
     ido-ubiquitous
     ido-vertical-mode
     imenu
+    expand-region
     
     ;; Theming etc
     rainbow-mode
     rainbow-delimiters
     noctilux-theme
+    dakrone-theme
     
     ;; Autocomplete
-    auto-complete
+    company
     
     ;; Clojure related packages
     clojure-mode
     cider
     clojure-mode-extra-font-locking
-    ac-cider
-
+    cljsbuild-mode
+    
     ;; Editing
-
+    highlight-parentheses
  ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -73,8 +75,14 @@
 ;; below, Emacs knows where to look for the corresponding file.
 (add-to-list 'load-path "~/.emacs.d/customizations")
 
+;; Utility functions
+(load "functions.el")
+
 ;; some general stuff
 (load "general.el")
+
+;; autocomplete via company
+(load "codecompletion.el")
 
 ;; ido, smex, imenu configuration
 (load "usability.el")
@@ -84,3 +92,6 @@
 
 ;; Bring out the git
 (load "sourcecontrol.el")
+
+;; Add lisp goodness
+(load "lispy.el")

@@ -1,3 +1,5 @@
+;; use rgb settings
+(setq ns-use-srgb-colorspace t)
 
 ;; Always UTF-8
 (set-terminal-coding-system 'utf-8)
