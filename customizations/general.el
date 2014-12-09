@@ -43,3 +43,9 @@
 
 ;; Hide menu
 (menu-bar-mode -1)
+
+;;Save 
+(require 'saveplace)
+(setq-default save-place t)
+(setq save-place-file-name (expand-file-name ".places" user-emacs-directory))
+
