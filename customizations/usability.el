@@ -1,3 +1,12 @@
+;; Just let me put in y
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+(defadvice kill-buffer (around kill-buffer-around-advice activate)
+  (let ((buffer-to-kill (ad-get-arg 0)))
+    (if (equal buffer-to-kill "*scratch*")
+        (bury-buffer)
+      ad-do-it)))
+
 ;; Enable
 (ido-mode t)
 (setq ido-enable-prefix nil

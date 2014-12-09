@@ -73,8 +73,14 @@
 ;; below, Emacs knows where to look for the corresponding file.
 (add-to-list 'load-path "~/.emacs.d/customizations")
 
+;; some general stuff
+(load "general.el")
+
 ;; ido, smex, imenu configuration
 (load "usability.el")
 
 ;; Themeing
 (load "appearance.el")
+
+;; Bring out the git
+(load "sourcecontrol.el")
