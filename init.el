@@ -29,7 +29,9 @@
     ;; Usability
     smex
     ido-ubiquitous
-
+    ido-vertical-mode
+    imenu
+    
     ;; Theming etc
     rainbow-mode
     rainbow-delimiters
@@ -71,3 +73,5 @@
 ;; below, Emacs knows where to look for the corresponding file.
 (add-to-list 'load-path "~/.emacs.d/customizations")
 
+;; ido, smex, imenu configuration
+(load "usability.el")
