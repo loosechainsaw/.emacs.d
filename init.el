@@ -75,3 +75,6 @@
 
 ;; ido, smex, imenu configuration
 (load "usability.el")
+
+;; Themeing
+(load "appearance.el")
