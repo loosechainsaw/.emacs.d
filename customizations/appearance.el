@@ -9,6 +9,8 @@
 ;; Smart mode line goodness
 (require 'smart-mode-line)
 (require 'smart-mode-line-powerline-theme)
-(setq sml/no-confim-theme-load)
-(sml/setup)
+
+(setq sml/no-confim-theme-load t)
 (sml/apply-theme 'dark)
+(setq sml/no-confim-theme-load)
+(add-hook 'after-init-hook 'sml/setup)

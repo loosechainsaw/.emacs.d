@@ -35,7 +35,6 @@
     powerline
     
     ;; Theming etc
-    rainbow-mode
     rainbow-delimiters
     noctilux-theme
     dakrone-theme
@@ -91,9 +90,6 @@
 ;; ido, smex, imenu configuration
 (load "usability.el")
 
-;; Themeing
-(load "appearance.el")
-
 ;; Bring out the git
 (load "sourcecontrol.el")
 
@@ -102,6 +98,7 @@
 
 ;; Nice editing stuff
 (load "editing.el")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -116,3 +113,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; Themeing
+(load "appearance.el")

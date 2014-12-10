@@ -103,3 +103,19 @@ Display the results in a hyperlinked *compilation* buffer."
     (nrepl-switch-to-repl-buffer nil)
     (insert "(require 'cljs.repl.node) (cljs.repl.node/run-node-nrepl)")
     (nrepl-send-input)))
+
+;; Short cut for cider
+(global-set-key [f9] 'cider-jack-in)
+
+;; Where to store the cider history.
+(setq cider-repl-history-file "~/.emacs.d/cider-history")
+  
+;; Wrap when navigating history.
+(setq cider-repl-wrap-history t)
+
+;; When there's a cider error, show its buffer and switch to it
+(setq cider-show-error-buffer nil)
+(setq cider-auto-select-error-buffer nil)
+
+;; turn off prompt for save on repl load
+(setq cider-prompt-save-file-on-load nil)
