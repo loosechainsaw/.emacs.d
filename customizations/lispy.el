@@ -45,6 +45,7 @@
 (eval-after-load "clojure-mode" '(require 'cider))
 (setq nrepl-lein-command "lein")
 (setq nrepl-server-command "echo \"lein repl :headless\" | $SHELL -l")
+(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
 
 ;; Run tests in nRepl
 (defun nrepl-run-tests (ns)

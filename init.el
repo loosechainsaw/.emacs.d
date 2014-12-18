@@ -49,6 +49,12 @@
     cider
     clojure-mode-extra-font-locking
     cljsbuild-mode
+
+    ;; Frontend Dev
+    web-mode
+
+    ;; Chat
+    erc
     
     ;; Editing
     highlight-parentheses
@@ -96,10 +102,17 @@
 ;; Add lisp goodness
 (load "lispy.el")
 
+;; Frontend dev shyte
+(load "frontend.el")
+
 ;; Nice editing stuff
 (load "editing.el")
 
+;; Mouse settings
 (load "mouse.el")
+
+;; IRC chat stuff
+(load "chat.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

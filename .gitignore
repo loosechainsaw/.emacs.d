@@ -1,5 +1,8 @@
 loaddefs.el*
 backups/*
+cider-history
+.DS_Store
+network-security.data
 auto-save-list
 *elc
 places
