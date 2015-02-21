@@ -42,6 +42,7 @@
     smart-mode-line-powerline-theme
     
     ;; Autocomplete
+    auto-complete
     company
     
     ;; Clojure related packages
@@ -131,3 +132,4 @@
 
 ;; Themeing
 (load "appearance.el")
+(put 'upcase-region 'disabled nil)

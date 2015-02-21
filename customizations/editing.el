@@ -24,3 +24,6 @@
                     :foreground 'unspecified
                     :inherit 'error
                     :strike-through t)
+
+;; Expand Region
+(global-set-key (kbd "C-j") 'er/expand-region)

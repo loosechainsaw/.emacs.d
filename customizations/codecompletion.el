@@ -9,3 +9,13 @@
       company-show-numbers t
       company-tooltip-align-annotations t
       company-require-match nil)
+
+
+;;(require 'auto-complete-config)
+
+;;(defun css-setup-ac ()
+;;  (setq ac-sources '(ac-source-dictionary ac-source-words-in-same-mode-buffers))
+;;  (ac-css-mode-setup)
+;;  (auto-complete-mode 1))
+
+;;(add-hook 'css-mode-hook #'css-setup-ac)
