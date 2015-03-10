@@ -9,21 +9,21 @@
 (setq create-lockfiles nil)
 
 ;; yay rainbows!
-(require 'rainbow-delimiters)
-(global-rainbow-delimiters-mode t)
+;;(require 'rainbow-delimiters)
+;;(global-rainbow-delimiters-mode t)
 
 (require 'cl-lib)
 (require 'color)
-(cl-loop
- for index from 1 to rainbow-delimiters-max-face-count
- do
- (let ((face (intern (format "rainbow-delimiters-depth-%d-face" index))))
-   (cl-callf color-saturate-name (face-foreground face) 30)))
+;;(cl-loop
+;; for index from 1 to rainbow-delimiters-max-face-count
+;; do
+;; (let ((face (intern (format "rainbow-delimiters-depth-%d-face" index))))
+;;   (cl-callf color-saturate-name (face-foreground face) 30)))
 
-(set-face-attribute 'rainbow-delimiters-unmatched-face nil
-                    :foreground 'unspecified
-                    :inherit 'error
-                    :strike-through t)
-
+;;(set-face-attribute 'rainbow-delimiters-unmatched-face nil
+;;                    :foreground 'unspecified
+;;                    :inherit 'error
+;;                    :strike-through t)
+;;
 ;; Expand Region
 (global-set-key (kbd "C-j") 'er/expand-region)
